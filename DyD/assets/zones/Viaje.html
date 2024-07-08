@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de la Aventura</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="viaje">
+    <h1>Bienvenido a tu Aventura</h1>
+    <p>Elige tu destino:</p>
+    <button onclick="irA('aldea')">Aldea</button>
+    <button onclick="irA('bosque')">Bosque</button>
+    <button onclick="irA('castillo')">Castillo</button>
+    <button onclick="irA('guarida_del_dragon')">Guarida del Dragón</button>
+    <button onclick="irA('mazmorra')">Mazmorra</button>
+    
+    <div id="contenido-aventura"></div>
+
+    <script>
+        function irA(destino) {
+            import(`../js/${destino}.js`).then(module => {
+                document.getElementById('contenido-aventura').innerHTML = module.contenido();
+                // Puedes llamar funciones específicas de cada módulo si las necesitas
+                // module.iniciar(); // Ejemplo
+            }).catch(err => {
+                console.error('Error al cargar el módulo:', err);
+            });
+        }
+    </script>
+</body>
+</html>

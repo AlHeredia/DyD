@@ -1,0 +1,73 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('../media/dyd_fondo.jpeg'); /* Ajusta la ruta según tu estructura */
+    background-size: cover;
+    color: red;
+}
+
+.personaje {
+    border: 1px solid white;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.special {
+    background-color: black;
+    color: red;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Estilos para la zona viaje */
+.viaje {
+    background-image: url('../media/viaje.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Estilos para la zona aldea */
+.aldea {
+    background-image: url('../media/aldea.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Estilos para la zona bosque */
+.bosque {
+    background-image: url('../media/bosque.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Estilos para la zona castillo */
+.castillo {
+    background-image: url('../media/castillo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Estilos para la zona guarida del dragón */
+.guarida_del_dragon {
+    background-image: url('../media/guarida_del_dragon.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Estilos para la zona mazmorra */
+.mazmorra {
+    background-image: url('../media/mazmorra.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
